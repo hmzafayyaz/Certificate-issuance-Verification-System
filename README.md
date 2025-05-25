@@ -56,11 +56,6 @@ A decentralized application that lets authorized admins issue on-chain certifica
 2. **Add Admin**: `0xBBB...`  
 3. **Revoke Certificate**: `0xCCC...`  
 
-## 📸 Screenshots
-
-![Remix Deployment](screenshots/remix_deploy.png)  
-![Frontend Usage](screenshots/frontend_usage.png)  
-
 ## 📁 Repository Structure
 
 ```plaintext
