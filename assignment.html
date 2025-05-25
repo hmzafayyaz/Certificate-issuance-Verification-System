@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Certificate Issuance DApp</title>
+  <!-- Ethers.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <!-- Your CSS File -->
+  <link rel="stylesheet" href="assignment.css" />
+  <!-- Your JavaScript File -->
+  <script defer src="assignment.js"></script>
+</head>
+<body>
+  <header>
+    <h2>Certificate Issuance & Verification DApp</h2>
+  </header>
+  <div class="container">
+    <!-- Wallet Connection -->
+    <button onclick="connectWallet()">Connect Wallet</button>
+    <p id="walletAddress">Not connected</p>
+    
+    <!-- Certificate Issuance -->
+    <h3>Issue Certificate</h3>
+    <input type="text" id="recipientAddress" placeholder="Recipient Address" />
+    <input type="text" id="metaURI" placeholder="Meta URI" />
+    <button onclick="issueCertificate()">Issue Certificate</button>
+    
+    <!-- Certificate Verification -->
+    <h3>Verify Certificate</h3>
+    <input type="number" id="verifyCertId" placeholder="Certificate ID" />
+    <button onclick="verifyCertificate()">Verify Certificate</button>
+    <p id="verifyResult"></p>
+    
+    <!-- Add Admin Section -->
+    <h3>Add Admin</h3>
+    <input type="text" id="adminAddress" placeholder="New Admin Address" />
+    <button onclick="addAdmin()">Add Admin</button>
+    <p id="adminStatus"></p>
+    
+    <!-- Status Messages -->
+    <p id="status"></p>
+  </div>
+  <footer>
+    &copy; 2025 Certificate DApp
+  </footer>
+</body>
+</html>
